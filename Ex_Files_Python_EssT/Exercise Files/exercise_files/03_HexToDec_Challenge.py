@@ -2,16 +2,6 @@
 Challenge: Write a fxn that converts a param hex value (type string, max 3 characters) into a decimal without using the int()
 Output: the decimal value of the hex value or 'None' if the value is not a valid hex value or greater than 3 characters
 
-Lingering questions:
-I need to check two conditions 
-1. is the param of 3 or less characters?
-    if yes then check for acceptable hex values
-    if no then break
-2. are all the characters in the param an acceptable hex value?
-    similar but repectively opposite outcomes to above
-
-which one would i need to check first to short function?
-
 Future Considerations:
 
 making the function more dynamic:
@@ -26,13 +16,48 @@ hexNumbers = {
     'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15
 }
 
+def hexToDecimal(hexnum):
+
+    string = hexnum.upper()
+    strlen = len(string)
+    
+
+    for s in string:
+        if s not in hexNumbers:
+            return print("None")
+            break
+
+    if strlen == 3:
+        print((hexNumbers[string[0]] * 256)  + (hexNumbers[string[1]] * 16) + (hexNumbers[string[2]] * 1))
+
+    if strlen == 2:
+        print((hexNumbers[string[0]] * 16) + (hexNumbers[string[1]] * 1))
+
+    if strlen == 1: 
+        print((hexNumbers[string[0]]))
+
+hexToDecimal('A2')
+hexToDecimal('b')
+hexToDecimal('bc')
+hexToDecimal('A1')
+hexToDecimal('xxx')
+
+'''
+162
+11
+188
+161
+None
+'''
+
+
 '''
 INITIAL ATTEMPT:
 
 This failed bc I forgot the nature of the for loop will iterate through the loop as many times as there 
 are characters in the value which explains why when i passed A1 it would print out 161 twice
 
-
+def hexToDecimal(hexnum):
 
     print("hex num given is " + hexnum)
     string = hexnum.upper()
