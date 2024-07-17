@@ -1,0 +1,11 @@
+key-pair values
+
+trailing , for good practice
+
+.keys() to display keys
+.values() to...
+
+list(animals.keys()) to turn keys into a list
+
+.get(key, pair) to add new key-pair
+

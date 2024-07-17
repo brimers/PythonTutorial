@@ -7,6 +7,7 @@ Future Considerations:
 making the function more dynamic:
 
 -revising the function to accept vairable length input
+        - could i use recursion to accomplish this
 -
 
 '''

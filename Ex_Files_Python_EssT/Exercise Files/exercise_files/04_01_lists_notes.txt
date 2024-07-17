@@ -1,0 +1,13 @@
+use [] to declare
+
+lists are:
+
+modifiable
+    .append() to add at end of lists
+    .insert(index, value)
+    .remove(value)
+        throw error if not present
+    .pop() - like a stack
+
+    b = a.copy() will make separate instance rather than referencing 
+

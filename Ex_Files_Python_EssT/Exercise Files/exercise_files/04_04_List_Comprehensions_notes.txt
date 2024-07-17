@@ -1,0 +1,1 @@
+.split(value) - ie , or . delimiter will split list based on that value. () space is delimiter

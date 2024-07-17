@@ -1,0 +1,21 @@
+Tuples:
+() to declare
+much like lists
+ordered, subscriptable but immutable
+memory is static
+used by default
+
+
+Sets:
+
+{} to declare
+order doesnt matter
+elements are unique
+cant fetch by index, nonsubscriptable
+thought of as more of a pile
+
+add(value) to append
+.pop() like a queue but order is not guaranteed
+.discard(value) to discard
+
+set(listName) to remove duplicates
