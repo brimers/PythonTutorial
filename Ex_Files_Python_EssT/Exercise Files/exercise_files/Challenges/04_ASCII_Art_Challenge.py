@@ -14,14 +14,19 @@ def encodeString(stringVal):
     return encodedList
 
 
+myTuple = [('W', 5),('1', 2),('G', 3)]
+def decodeString(encodedList):
+    decodedString = ''
+    for elem in encodedList:
+        decodedString = decodedString + elem[0] * elem[1] 
+    return decodedString
 
-#def decodeString(encodedList):
 
 
 
 print(encodeString('AAAAABBBBAAA'))
 
-print(encodeString('AAAAABBBBABA'))
+print(encodeString('BookKeeping'))
 
 
-#decodeString(Bookkeeping)
+print(decodeString(myTuple))
