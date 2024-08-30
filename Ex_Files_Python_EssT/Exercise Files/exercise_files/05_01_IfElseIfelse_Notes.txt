@@ -1,0 +1,8 @@
+if      only 1
+elif    proceeds if, many
+else    optional, only 1
+
+ternary operator
+fizzBuzz = 'Fizz' if n % 3 == 0 else n
+Java String fizzBuzz = n % 3 ? "Fizz" : n
+ternary operator
